@@ -1,9 +1,9 @@
 package com.demo_api5_persona.rest;
 
 import com.demo_api5_persona.model.Estado;
-import com.demo_api5_persona.model.Pais;
+
 import com.demo_api5_persona.service.EstadoService;
-import com.demo_api5_persona.service.PaisService;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.GetMapping;

@@ -24,9 +24,9 @@ public class PersonaService {
     }
 
     public Persona save(Persona persona) {
-        var optional = paisRepository.findByNombre(persona.getPais().getNombre());
+        var optional = paisRepository.findByNombre(persona.getPais().getNombre()); // de la persona busco el pais y del pais busco el nombre
         if (optional.isEmpty()) {
-            var newPais = paisRepository.save(persona.getPais());
+            var newPais = paisRepository.save(persona.getPais()); // solo get pais porque  puede tener mas propiedades que solo nombre
             persona.setPais(newPais);
         } else {
             persona.setPais(optional.get());
